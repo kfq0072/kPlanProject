@@ -165,10 +165,10 @@
             </objects>
             <point key="canvasLocation" x="-1209" y="784"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Or Reg View Controller-->
         <scene sceneID="M51-zw-o16">
             <objects>
-                <viewController id="88y-Zb-xbh" sceneMemberID="viewController">
+                <viewController id="88y-Zb-xbh" customClass="LoginOrRegViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e00-Jx-krs"/>
                         <viewControllerLayoutGuide type="bottom" id="57z-Vu-f0j"/>
@@ -177,8 +177,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGn-mj-YHu">
-                                <rect key="frame" x="238" y="480" width="66" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGn-mj-YHu">
+                                <rect key="frame" x="180" y="515" width="240" height="42"/>
+                                <color key="backgroundColor" red="0.85262335320000004" green="1" blue="0.96008398500000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6YZ-dT-iYU"/>
+                                    <constraint firstAttribute="height" constant="42" id="LIH-ab-bOG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="登录/注册">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -187,36 +193,79 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8e-uE-Cc8">
-                                <rect key="frame" x="127" y="409" width="46" height="30"/>
+                                <rect key="frame" x="75" y="409" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sinaClick:" destination="88y-Zb-xbh" eventType="touchUpInside" id="mQC-fk-y0Y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRM-ho-oKB">
-                                <rect key="frame" x="245" y="409" width="46" height="30"/>
+                                <rect key="frame" x="193" y="409" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjb-jR-JUh">
-                                <rect key="frame" x="387" y="409" width="46" height="30"/>
+                                <rect key="frame" x="335" y="409" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="weChatClick:" destination="88y-Zb-xbh" eventType="touchUpInside" id="8m2-9f-hez"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aaq-zh-m7d">
-                                <rect key="frame" x="180" y="20" width="240" height="128"/>
+                                <rect key="frame" x="128" y="20" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7eJ-gN-KLj">
-                                <rect key="frame" x="167" y="221" width="240" height="128"/>
+                                <rect key="frame" x="115" y="221" width="240" height="128"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odu-7F-1bD">
+                                <rect key="frame" x="75" y="447" width="60" height="30"/>
+                                <state key="normal" title="新浪微博">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sinaClick:" destination="88y-Zb-xbh" eventType="touchUpInside" id="PyY-DK-kcn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtn-V4-PcB">
+                                <rect key="frame" x="193" y="447" width="54" height="30"/>
+                                <state key="normal" title="腾讯QQ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tenxunClick:" destination="88y-Zb-xbh" eventType="touchUpInside" id="cwr-W9-nyk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-c6-19a">
+                                <rect key="frame" x="335" y="447" width="30" height="30"/>
+                                <state key="normal" title="微信">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="weChatClick:" destination="88y-Zb-xbh" eventType="touchUpInside" id="oOd-7I-Nep"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="xGn-mj-YHu" secondAttribute="centerX" id="U3f-HB-bQ4"/>
+                            <constraint firstItem="57z-Vu-f0j" firstAttribute="top" secondItem="xGn-mj-YHu" secondAttribute="bottom" constant="43" id="qpl-BI-MZp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginOrRegisterBtn" destination="xGn-mj-YHu" id="e0V-7R-zUn"/>
+                        <outlet property="sinaIcon" destination="o8e-uE-Cc8" id="glO-YI-v9m"/>
+                        <outlet property="tenxunIcon" destination="mRM-ho-oKB" id="zvD-Oo-pl4"/>
+                        <outlet property="weChatIcon" destination="Tjb-jR-JUh" id="Ghh-dd-eUP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twR-J9-6gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-953" y="-1425"/>
+            <point key="canvasLocation" x="-970" y="-1475"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xtX-8Y-3Ru">
@@ -257,29 +306,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WDH-Ef-tll">
-                                <rect key="frame" x="230" y="119" width="195" height="72"/>
+                                <rect key="frame" x="147" y="114" width="195" height="72"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PTn-aX-E7p">
-                                <rect key="frame" x="176" y="229" width="249" height="72"/>
+                                <rect key="frame" x="93" y="224" width="249" height="72"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-oX-XEv">
-                                <rect key="frame" x="446" y="85" width="129" height="30"/>
-                                <state key="normal" title="切换到佛旅ID登录&gt;">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="useFoLvClick:" destination="sxH-On-Fhe" eventType="touchUpInside" id="RJi-1M-IIV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35W-c8-ktK">
-                                <rect key="frame" x="176" y="354" width="258" height="57"/>
+                                <rect key="frame" x="93" y="349" width="258" height="57"/>
                                 <color key="backgroundColor" red="1" green="0.1181433606" blue="0.111154076" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="登录">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -290,27 +329,27 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5p-d6-q8g">
-                                <rect key="frame" x="41" y="456" width="130" height="6"/>
+                                <rect key="frame" x="-42" y="451" width="130" height="6"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-OY-f6Q">
-                                <rect key="frame" x="349" y="456" width="130" height="6"/>
+                                <rect key="frame" x="266" y="451" width="130" height="6"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你可以选择第三方登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO0-SS-XGx">
-                                <rect key="frame" x="176" y="448" width="170" height="21"/>
+                                <rect key="frame" x="93" y="443" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNx-Jb-zca">
-                                <rect key="frame" x="120" y="485" width="46" height="30"/>
+                                <rect key="frame" x="37" y="480" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -319,14 +358,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPq-Uk-Avq">
-                                <rect key="frame" x="121" y="532" width="54" height="30"/>
+                                <rect key="frame" x="38" y="527" width="54" height="30"/>
                                 <state key="normal" title="腾讯QQ">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BG-7T-oca">
-                                <rect key="frame" x="261" y="485" width="46" height="30"/>
+                                <rect key="frame" x="178" y="480" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -335,7 +374,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHV-hV-4Rp">
-                                <rect key="frame" x="262" y="532" width="30" height="30"/>
+                                <rect key="frame" x="179" y="527" width="30" height="30"/>
                                 <state key="normal" title="微信">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -345,7 +384,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAA-RO-IxI">
-                                <rect key="frame" x="399" y="485" width="46" height="30"/>
+                                <rect key="frame" x="316" y="480" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -354,7 +393,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BN5-O9-WMH">
-                                <rect key="frame" x="400" y="532" width="60" height="30"/>
+                                <rect key="frame" x="317" y="527" width="60" height="30"/>
                                 <state key="normal" title="新浪微博">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -364,27 +403,43 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+86" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puv-NH-k1C">
-                                <rect key="frame" x="176" y="114" width="54" height="77"/>
+                                <rect key="frame" x="93" y="109" width="54" height="77"/>
                                 <color key="backgroundColor" red="0.94156458529999998" green="0.72292558600000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6h-2X-hqn">
-                                <rect key="frame" x="225" y="131" width="5" height="50"/>
+                                <rect key="frame" x="142" y="126" width="5" height="50"/>
                                 <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4J-Hk-iWU">
-                                <rect key="frame" x="271" y="419" width="75" height="30"/>
+                                <rect key="frame" x="188" y="414" width="75" height="30"/>
                                 <state key="normal" title="忘记密码？">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="forgetPassWordClick:" destination="sxH-On-Fhe" eventType="touchUpInside" id="d4b-Pb-1Dz"/>
                                     <segue destination="56S-6M-e7Q" kind="push" id="Rfq-uq-7p2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入佛旅 ID" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8A6-5K-2Gd">
+                                <rect key="frame" x="93" y="114" width="249" height="72"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-oX-XEv">
+                                <rect key="frame" x="275" y="76" width="129" height="30"/>
+                                <state key="normal" title="切换到佛旅ID登录&gt;">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="useFoLvClick:" destination="sxH-On-Fhe" eventType="touchUpInside" id="RJi-1M-IIV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -405,6 +460,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countryCode" destination="Puv-NH-k1C" id="CfK-PJ-Nbn"/>
+                        <outlet property="folvIDText" destination="8A6-5K-2Gd" id="MkG-az-V1d"/>
+                        <outlet property="line" destination="b6h-2X-hqn" id="ky9-7j-Y6f"/>
                         <outlet property="passwordText" destination="PTn-aX-E7p" id="OOk-r9-TIw"/>
                         <outlet property="phoneText" destination="WDH-Ef-tll" id="kN3-bh-Q2o"/>
                         <outlet property="useFoLvBtn" destination="lZA-oX-XEv" id="2Ud-zg-4uI"/>

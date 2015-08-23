@@ -19,6 +19,7 @@
 		7527E99C1B8961C800463B5F /* RadioGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527E99A1B8961C800463B5F /* RadioGroup.m */; };
 		7527E9A11B896BDA00463B5F /* MasterSignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7527E9A01B896BDA00463B5F /* MasterSignatureViewController.m */; };
 		752C83201B8774820073A76C /* MeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752C831F1B8774820073A76C /* MeTableViewController.m */; };
+		753EF7711B89E7280064E175 /* LoginOrRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 753EF7701B89E7280064E175 /* LoginOrRegViewController.m */; };
 		75657D711B8615BA0050DF2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75657D701B8615BA0050DF2E /* main.m */; };
 		75657D741B8615BA0050DF2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75657D731B8615BA0050DF2E /* AppDelegate.m */; };
 		75657D771B8615BA0050DF2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75657D761B8615BA0050DF2E /* ViewController.m */; };
@@ -67,6 +68,8 @@
 		7527E9A01B896BDA00463B5F /* MasterSignatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterSignatureViewController.m; sourceTree = "<group>"; };
 		752C831E1B8774820073A76C /* MeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableViewController.h; sourceTree = "<group>"; };
 		752C831F1B8774820073A76C /* MeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableViewController.m; sourceTree = "<group>"; };
+		753EF76F1B89E7280064E175 /* LoginOrRegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginOrRegViewController.h; sourceTree = "<group>"; };
+		753EF7701B89E7280064E175 /* LoginOrRegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginOrRegViewController.m; sourceTree = "<group>"; };
 		75657D6B1B8615BA0050DF2E /* kPlanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kPlanProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75657D6F1B8615BA0050DF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75657D701B8615BA0050DF2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				7527E9951B8961B700463B5F /* View */,
+				753EF76F1B89E7280064E175 /* LoginOrRegViewController.h */,
+				753EF7701B89E7280064E175 /* LoginOrRegViewController.m */,
 				75209FC61B88C1BF003A366B /* LoginViewController.h */,
 				75209FC71B88C1BF003A366B /* LoginViewController.m */,
 				7527E9891B8949EF00463B5F /* RegisterByPhoneViewController.h */,
@@ -410,6 +415,7 @@
 				7527E99B1B8961C800463B5F /* RadioBox.m in Sources */,
 				75657D711B8615BA0050DF2E /* main.m in Sources */,
 				7527E9A11B896BDA00463B5F /* MasterSignatureViewController.m in Sources */,
+				753EF7711B89E7280064E175 /* LoginOrRegViewController.m in Sources */,
 				7527E99C1B8961C800463B5F /* RadioGroup.m in Sources */,
 				7527E9911B89528A00463B5F /* UseAgreementViewController.m in Sources */,
 			);
