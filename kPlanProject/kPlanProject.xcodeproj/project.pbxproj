@@ -30,6 +30,7 @@
 		75657D9A1B8620C50050DF2E /* Head.png in Resources */ = {isa = PBXBuildFile; fileRef = 75657D991B8620C50050DF2E /* Head.png */; };
 		75657D9D1B8622010050DF2E /* FirstPageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75657D9C1B8622010050DF2E /* FirstPageTableViewCell.m */; };
 		75657DA21B8627A00050DF2E /* commentPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75657DA11B8627A00050DF2E /* commentPopView.m */; };
+		D153DE071B8990AC0083A4CE /* 接口文档V1.1.doc in Resources */ = {isa = PBXBuildFile; fileRef = D153DE061B8990AC0083A4CE /* 接口文档V1.1.doc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		75657D9C1B8622010050DF2E /* FirstPageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageTableViewCell.m; sourceTree = "<group>"; };
 		75657DA01B8627A00050DF2E /* commentPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commentPopView.h; sourceTree = "<group>"; };
 		75657DA11B8627A00050DF2E /* commentPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commentPopView.m; sourceTree = "<group>"; };
+		D153DE061B8990AC0083A4CE /* 接口文档V1.1.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "接口文档V1.1.doc"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 				75657D781B8615BA0050DF2E /* Main.storyboard */,
 				75657D7B1B8615BA0050DF2E /* Images.xcassets */,
 				75657D7D1B8615BA0050DF2E /* LaunchScreen.xib */,
+				D153DE051B8990AC0083A4CE /* 接口文档 */,
 				75657D6E1B8615BA0050DF2E /* Supporting Files */,
 			);
 			path = kPlanProject;
@@ -291,6 +294,14 @@
 				75657D961B86166B0050DF2E /* FirstPageViewController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D153DE051B8990AC0083A4CE /* 接口文档 */ = {
+			isa = PBXGroup;
+			children = (
+				D153DE061B8990AC0083A4CE /* 接口文档V1.1.doc */,
+			);
+			path = "接口文档";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +388,7 @@
 				75657D9A1B8620C50050DF2E /* Head.png in Resources */,
 				75657D7F1B8615BA0050DF2E /* LaunchScreen.xib in Resources */,
 				75657D7C1B8615BA0050DF2E /* Images.xcassets in Resources */,
+				D153DE071B8990AC0083A4CE /* 接口文档V1.1.doc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = kPlanProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -548,6 +561,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = kPlanProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
